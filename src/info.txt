@@ -1,0 +1,17 @@
+https://gorest.co.in/
+
+https://gorest.co.in/public/v1/users
+https://gorest.co.in/public/v1/users/24
+
+https://picsum.photos/id/1/200/300
+
+
+https://jsonplaceholder.typicode.com/albums
+
+
+https://gorest.co.in/public/v1/users/102/todos
+
+
+1. Load a list of X.
+2. Display the list on the screen
+3. When an X is clicked on it will display the Y associated with X
