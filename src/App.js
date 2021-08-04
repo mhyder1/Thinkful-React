@@ -11,11 +11,15 @@ function App() {
       .then(({ data }) => setUsers(data));
   }, []);
 
-  const userList = users.map((user, index) => (
-    <Details user={user} appIndex={appIndex} setAppIndex={setAppIndex} index={index} />
-  ));
-
-  return userList;
+  return (
+    <>
+      {
+        users.map((user, index) => (
+          <Details user={user} appIndex={appIndex} setAppIndex={setAppIndex} index={index} />
+        ))
+      }
+    </>
+  );
 }
 
 export default App;

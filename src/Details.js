@@ -17,16 +17,18 @@ const Details = ({user, appIndex, setAppIndex, index}) => {
 
     return (
         <div style={{borderBottom: "1px solid black"}}>
-            <p onClick={() => handleClick(user.id)}>{user.name}</p>
+            <h3 onClick={() => handleClick(user.id)} style={{cursor: 'pointer'}}>{user.name}</h3>
             <p>{user.email}</p>
             <p>{user.gender}</p>
             {  
-                appIndex === index && <section style={{border: '1px solid red'}}>
+                appIndex === index && <section style={{marginLeft: '50px'}}>
+                    <h3>Todos:</h3>
                 {
                     todos.map(todo => (
                         <>
-                            <p>{todo.title}</p>
-                            <p>{todo.status}</p>
+                            <p>Title: {todo.title}</p>
+                            <p>Status: {todo.status}</p>
+                            <hr />
                         </>
                     ))
                 }
